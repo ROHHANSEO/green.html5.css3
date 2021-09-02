@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 초기화 */
+* {margin: 0; padding: 0; }
+body { font-family: 'Helvetica',sans-serif; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+/* 헤더 */
+#main_header {
+    width: 100%; margin: 0 auto;
+    background: lightcoral;
+}
+
+#warp_nav {
+    background: lightcyan;
+}
+
+#main_title {
+    background: lightgray;
+}
+
+#title {
+    background: lightgreen;
+}
+#main_gnb {
+    background: lightpink;
+}
+
+/* 테스트컬러 */
+
+#warp_nav > ul {
+    overflow: hidden;
+    margin-left: 120px;
+}
+
+#warp_nav > ul > li {
+    float: left;
+    margin-left: 10px;
+}
+
+/* 네비게이션(1) */
+
+#main_title {
+    overflow: hidden;
+}
+
+#main_gnb > #title {
+    overflow: hidden;
+}
+#title > .left {
+    float: left;
+    margin-left: 100px;
+}
+
+#main_title > #main_gnb {
+    float: right;
+    overflow: hidden;
+}
+
+#main_title > #title {}
+
+#main_gnb > ul {
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+#main_gnb > ul > li {
+    float: right;
+    margin-right: 10px;
+}
+
+#main_gnb > ul > li > a {
+    padding: 10px;
+}
+
+#main_gnb > #select_leng {
+    /* float: right; */
+}
+
+
+
+/* 본문 헤드 */
+
+#main_section {
+    width: 960px; margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+
+#main_section > #main_article {
+
+}
+
+#main_article > h1 {
+    padding: 20px;
+    font-size: 36px;
+}
+
+#main_article > p {
+    /* 줄 넓이 조절 */
+}
+
+#sub_article {
+    margin-top: 70px;
+    background: blue;
+    overflow: hidden;
+}
+
+#sub_article > h1 {
+    font-size: 36px;
+}
+
+#sub_article > .img_block {
+    float: left;
+    display: block;
+    margin-left: 32px;
+    text-align: center;
+}
+
+
+/* 푸터 */
+
+#main_footer {
+    width: 960px; margin: 0 auto;
+    border-top: 1px solid black;
+    position: relative;
+    top: 200px;
+}
+
+#main_footer > div > h1 {
+    font-size: 32px;
+    padding: 50px 20px;
+}
+
+
+#main_footer > div > #footer_img {
+    display: inline;
+}
+
+#main_footer > #footer_add {
+    display: inline-block;
+    position: absolute;
+    top: 130px; left: 400px;
+    text-align: center;
+}
+
+#main_footer > #bottom_text {
+    margin: 0 -150px 0;
+    text-align: center;
+    font-size: 25px;
+    background: black;
+    color: white;
+}
