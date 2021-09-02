@@ -2,103 +2,84 @@
 
 /* 초기화 */
 * {margin: 0; padding: 0; }
-body { font-family: 'Helvetica',sans-serif; }
+body { 
+    font-family: 'Helvetica',sans-serif; 
+}
 li { list-style: none; }
 a { text-decoration: none; }
 
+
 /* 헤더 */
-
-/* 네비게이션(1) */
+#main_header {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    background: #222;
+    overflow: hidden;
+}
 #wrap_nav {
+    width: 1160px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 6px 0 0 20px;
     overflow: hidden;
-    border-bottom: 1px solid black;
-    background: black;
 }
-
-#wrap_nav > ul.left {
-    overflow: hidden;
+#main_header > #wrap_nav > ul > li {
     float: left;
+    margin: 0 14px 0 0;
+    line-height: 20px;
+}
+#main_header > #wrap_nav > ul > li > a {
+    display: inline-block;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 0px;
 }
 
-#wrap_nav > ul.right {
+/* 메인메뉴 */
+
+#main_gnb {
+    width: 1160px;
+    height: 86px;
+    margin: 0 auto;
+    padding: 6px 0 0 20px;
     overflow: hidden;
+}
+#main_gnb > #title {
+    float: left;
+    margin: 0 14px 0 0;
+    line-height: 20px;
+}
+#main_gnb > #title > h1 {
+    display: inline-block;
+    font-size: 36px;
+    color: #bbb;
+    letter-spacing: 0px;
+}
+
+#main_gnb > #main_lnb {
+    overflow: hidden;
+    margin: 0 14px 0 0;
+    line-height: 20px;
+}
+
+#main_gnb > #main_lnb > li {
+    float: right;
+    padding-left: 20px;
+    margin-top: 1px;
+}
+
+#main_gnb > #main_lnb > li > a {
+    display: inline-block;
+    font-size: 24px;
+    color: #bbb;
+    letter-spacing: 0px;
+}
+
+#select_leg {
+    margin-right: 0px;
+}
+
+#select_leg {
     float: right;
 }
-
-#wrap_nav > ul.left > li {
-    float: left;
-}
-
-#wrap_nav > ul.right > li {
-    float: left;
-}
-
-#wrap_nav > button {
-    float: right;
-}
-
-#wrap_nav a {
-    display: block;
-    padding: 5px 10px;
-    color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-/* 타이틀 네비게이션 */
-
-#header {
-    overflow: hidden;
-    border-bottom: 1px solid black;
-    /* background: black; */
-}
-
-#header > #title {
-    overflow: hidden;
-    float: left;
-}
-
-#header > #main_gnb {
-    overflow: hidden;
-    float: right;
-}
-
-#header > #title > h1 {
-    float: left;
-}
-
-#header > #main_gnb > ul > li {
-    float: left;
-}
-
-#header > button {
-    float: right;
-}
-
-#header a {
-    display: block;
-    padding: 20px 20px;
-}
-
-#title h1 {
-    display: block;
-    padding: 20px 20px;
-}
-
-#header > #search {
-    float: right;
-}
-
-#main_nav {
-    overflow: hidden;
-}
-
-#main_nav > ul {
-    overflow: hidden;
-    float: left;
-}
-
-#main_nav > ul > a {
-    float: left;
-}
-
