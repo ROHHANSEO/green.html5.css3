@@ -12,23 +12,6 @@ a { text-decoration: none; }
     background: lightcoral;
 }
 
-#warp_nav {
-    background: lightcyan;
-}
-
-#main_title {
-    background: lightgray;
-}
-
-#title {
-    background: lightgreen;
-}
-#main_gnb {
-    background: lightpink;
-}
-
-/* 테스트컬러 */
-
 #warp_nav > ul {
     overflow: hidden;
     margin-left: 120px;
@@ -85,9 +68,9 @@ a { text-decoration: none; }
 #main_section {
     width: 960px; margin: 0 auto;
     overflow: hidden;
-    position: relative;
-    top: 30px;
-}
+    /* position: relative;
+    top: 30px;*/
+} 
 
 #main_section > #main_article {
 
@@ -123,31 +106,34 @@ a { text-decoration: none; }
 /* 푸터 */
 
 #main_footer {
-    width: 960px; margin: 0 auto;
+    width: 100%;
     border-top: 1px solid black;
     position: relative;
     top: 200px;
 }
 
-#main_footer > div > h1 {
+#main_footer > div {
+    width: 960px; margin: 0 auto;
+}
+
+#main_footer > div > div > h1 {
     font-size: 32px;
     padding: 50px 20px;
 }
 
 
-#main_footer > div > #footer_img {
+#main_footer > div > div > #footer_img {
     display: inline;
 }
 
-#main_footer > #footer_add {
+#main_footer #footer_add {
     display: inline-block;
     position: absolute;
     top: 130px; left: 400px;
     text-align: center;
 }
 
-#main_footer > #bottom_text {
-    margin: 0 -150px 0;
+#main_footer #bottom_text {
     text-align: center;
     font-size: 25px;
     background: black;
