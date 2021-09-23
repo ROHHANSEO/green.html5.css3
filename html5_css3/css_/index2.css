@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; }
+body { font-family: 'Helvetica',sans-serif; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+#main_header > div {
+    overflow: hidden;
+    margin: 20px;
+}
+
+#main_header .title {
+    float: left;
+}
+
+#main_header .main_lnb {
+    float: right;
+}
+
+.main_lnb > ul {
+    overflow: hidden;
+}
+
+.main_lnb li {
+    float: left;
+}
+
