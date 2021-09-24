@@ -5,9 +5,11 @@ body { font-family: 'Helvetica',sans-serif; }
 li { list-style: none; }
 a { text-decoration: none; }
 
-#main_header > div {
+#main_header > #main_title {
     overflow: hidden;
-    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px;
 }
 
 #main_header .title {
@@ -26,3 +28,36 @@ a { text-decoration: none; }
     float: left;
 }
 
+#main_text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+
+#main_text span {
+    line-height: 100px;
+}
+
+#main_section {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+}
+
+#main_section > div {
+    float: left;
+    top: 20%;
+    position: absolute;
+}
+
+.section_img {
+    margin-left: 450px;
+}
+
+#sub_section {
+    height: 500px;
+}
+
+.sub_sec_img {
+    margin: 30px;
+}
